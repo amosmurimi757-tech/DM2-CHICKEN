@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Fresh Meat Daily</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <img src="./DM2 CHICKENS.jpg" alt="DM2 CHICKENS logo" class="navbar-logo">
+                <h1>DM2 CHICKENS</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Fill out the form below and we'll confirm your order via WhatsApp</p>
+        </div>
+    </section>
+
+    <!-- Delivery Info Alert -->
+    <section class="alert-section">
+        <div class="container">
+            <div class="alert alert-info">
+                <strong>📍 Free Delivery Info:</strong> Free delivery applies only to meat orders above KSH 10,000. Orders below this amount may have delivery charges, which will be confirmed on WhatsApp.
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="orderForm" class="order-form">
+                    <!-- Customer Details -->
+                    <fieldset>
+                        <legend>Your Details</legend>
+
+                        <div class="form-group">
+                            <label for="customerName">Full Name *</label>
+                            <input type="text" id="customerName" name="customerName" required placeholder="Your name">
+                            <small class="error" id="nameError"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerPhone">Phone Number *</label>
+                            <input type="tel" id="customerPhone" name="customerPhone" required placeholder="0701698883">
+                            <small class="error" id="phoneError"></small>
+                        </div>
+                    </fieldset>
+
+                    <!-- Meat Selection -->
+                    <fieldset>
+                        <legend>Meat Selection</legend>
+
+                        <div class="form-group">
+                            <label for="meatType">Meat Type *</label>
+                            <select id="meatType" name="meatType" required>
+                                <option value="">-- Select Meat Type --</option>
+                                <option value="Whole Chicken">Chicken - Whole</option>
+                                <option value="Chicken Cut Pieces">Chicken - Cut Pieces</option>
+                                <option value="Beef">Beef (Cow Meat)</option>
+                                <option value="Goat Meat">Goat Meat</option>
+                                <option value="Other Meats">Other Meats (Lamb, Pork, etc.)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <input type="text" id="quantity" name="quantity" required placeholder="e.g., 2kg, 5 pieces, 10kg">
+                            <small class="help-text">Specify in kg or number of pieces</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderValue">Estimated Order Value (KSH) *</label>
+                            <input type="number" id="orderValue" name="orderValue" required placeholder="e.g., 5000" min="0">
+                            <small class="help-text">This helps us determine delivery eligibility</small>
+                        </div>
+
+                        <div class="delivery-notice" id="deliveryNotice"></div>
+                    </fieldset>
+
+                    <!-- Delivery Options -->
+                    <fieldset>
+                        <legend>Delivery Options</legend>
+
+                        <div class="form-group">
+                            <label for="deliveryType">Delivery or Pickup? *</label>
+                            <select id="deliveryType" name="deliveryType" required>
+                                <option value="">-- Select Option --</option>
+                                <option value="Delivery">Home Delivery</option>
+                                <option value="Pickup">Pickup from Dagoreti Slaughter House</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="deliveryAddressGroup" style="display: none;">
+                            <label for="deliveryAddress">Delivery Address</label>
+                            <textarea id="deliveryAddress" name="deliveryAddress" placeholder="Enter your full delivery address" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Delivery/Pickup Time *</label>
+                            <select id="preferredTime" name="preferredTime" required>
+                                <option value="">-- Select Time --</option>
+                                <option value="ASAP (Same Day)">ASAP (Same Day)</option>
+                                <option value="Morning (8AM - 12PM)">Morning (8AM - 12PM)</option>
+                                <option value="Afternoon (12PM - 4PM)">Afternoon (12PM - 4PM)</option>
+                                <option value="Evening (4PM - 8PM)">Evening (4PM - 8PM)</option>
+                                <option value="Tomorrow">Tomorrow</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <!-- Additional Notes -->
+                    <fieldset>
+                        <legend>Additional Information</legend>
+
+                        <div class="form-group">
+                            <label for="notes">Special Requests or Notes</label>
+                            <textarea id="notes" name="notes" placeholder="Any special preparation? Cooking preferences? Other requests?" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Send Order to WhatsApp</button>
+                        <small class="form-note">You'll be redirected to WhatsApp to confirm and send your order</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Contact Section -->
+    <section class="owner-contact-section">
+        <div class="container">
+            <h2>For Orders, Contact the Owner</h2>
+            <div class="owner-contact-container">
+                <div class="owner-contact-image">
+                    <img src="./owner M.jpg" alt="Owner of DM2 CHICKENS" class="contact-owner-image">
+                </div>
+                <div class="owner-contact-info">
+                    <p>Get in touch with our owner directly for orders, inquiries, or bulk purchases.</p>
+                    <p><strong>WhatsApp/Phone:</strong> 0701698883</p>
+                    <p><strong>Location:</strong> Dagoreti Slaughter House</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How Our Ordering Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Fill the Form</h3>
+                    <p>Enter your details and meat preferences</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Submit & WhatsApp Opens</h3>
+                    <p>Click submit and WhatsApp opens automatically</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Send to Us</h3>
+                    <p>Your order details are pre-filled - just send!</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>We Confirm</h3>
+                    <p>We confirm via WhatsApp and prepare your order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Fresh Meat Daily. All rights reserved.</p>
+            <p>Dagoreti Slaughter House | <a href="tel:0701698883">0701698883</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254701698883?text=Hi%2C%20I%27m%20interested%20in%20ordering%20fresh%20meat%20from%20Fresh%20Meat%20Daily" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

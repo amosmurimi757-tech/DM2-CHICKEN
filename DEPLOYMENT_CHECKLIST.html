@@ -1,0 +1,293 @@
+<!-- DEPLOYMENT CHECKLIST - Fresh Meat Daily Website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Checklist</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { color: #d32f2f; }
+        h2 { color: #1976d2; margin-top: 30px; }
+        .checklist { background: #f8f9fa; padding: 20px; border-radius: 8px; }
+        .item { margin: 15px 0; display: flex; align-items: flex-start; }
+        .checkbox { margin-right: 15px; margin-top: 3px; cursor: pointer; font-size: 1.2em; }
+        .item-text { flex: 1; }
+        .item-text strong { color: #1976d2; }
+        .item-text p { margin: 5px 0; color: #666; }
+        .section { margin-bottom: 30px; }
+        .status { padding: 10px; border-radius: 4px; margin-top: 20px; }
+        .status.ready { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .tip { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; margin: 15px 0; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Fresh Meat Daily - Deployment Checklist</h1>
+    
+    <div class="section">
+        <h2>✅ Pre-Launch Checks</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test on Mobile Device</strong>
+                    <p>Open website on actual smartphone. Check layout and forms work correctly.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test on Desktop</strong>
+                    <p>Check on laptop/computer. Verify all pages load and links work.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test Order Form</strong>
+                    <p>Submit a test order. Verify WhatsApp opens with correct details.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test WhatsApp Integration</strong>
+                    <p>Click floating WhatsApp button. Ensure it opens correctly.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Verify Phone Number</strong>
+                    <p>Check business phone number on: Home, Products, Order, Contact pages</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Verify Location Info</strong>
+                    <p>Check "Dagoreti Slaughter House" is displayed on relevant pages</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test All Links</strong>
+                    <p>Click every navigation link. All pages should load properly.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Test Call Button</strong>
+                    <p>On mobile, click "Call Now" button. Should dial business number.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📝 Content Checklist</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Business Name</strong>
+                    <p>Confirmed as: "Fresh Meat Daily"</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>WhatsApp Number</strong>
+                    <p>Confirmed as: 0701698883 (or your number)</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Location</strong>
+                    <p>Confirmed as: Dagoreti Slaughter House (or your location)</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Free Delivery Threshold</strong>
+                    <p>Confirmed as: KSH 10,000 (or your amount)</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Product List</strong>
+                    <p>Check all meat types are listed: Chicken, Beef, Goat, Other</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>About Page</strong>
+                    <p>Update with your business story and commitment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🖼️ Images & Media</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Product Images (Optional)</strong>
+                    <p>Add photos to <code>img/</code> folder: chicken.jpg, beef.jpg, goat.jpg</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Logo/Branding (Optional)</strong>
+                    <p>Add business logo to replace "🥩 Fresh Meat Daily" text in navbar</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Favicon (Optional)</strong>
+                    <p>Add favicon.ico to root folder for browser tab icon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌐 Deployment Options</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>GitHub Pages (Recommended - FREE)</strong>
+                    <p>Push to GitHub and enable Pages. Website available at github.com/username/repo</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Netlify (Easy - FREE)</strong>
+                    <p>Drag & drop folder to netlify.com. Instant live deployment.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Vercel (One-Click - FREE)</strong>
+                    <p>Connect GitHub account. Auto-deploys on every push.</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Traditional Web Hosting</strong>
+                    <p>Upload via FTP to your hosting provider. Works with any host.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📢 Marketing & Distribution</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Share on WhatsApp</strong>
+                    <p>Send website link in WhatsApp status and to customer groups</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Add to Email Signature</strong>
+                    <p>Include website URL in email footer</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Print Materials</strong>
+                    <p>Add website URL to business cards, flyers, menus</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Google My Business</strong>
+                    <p>Add website link to your Google Business Profile</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Social Media</strong>
+                    <p>Share website link on Facebook, Instagram, Twitter (if applicable)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tip">
+        <strong>💡 Pro Tip:</strong> After deployment, monitor which pages get the most traffic. 
+        Focus on improving the Order page and Contact page based on user behavior.
+    </div>
+
+    <div class="section">
+        <h2>🎯 Post-Launch</h2>
+        <div class="checklist">
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Monitor Orders</strong>
+                    <p>Check WhatsApp regularly for incoming orders</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Update Availability</strong>
+                    <p>Periodically update product availability and delivery info</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Gather Feedback</strong>
+                    <p>Ask customers about their experience with the website</p>
+                </div>
+            </div>
+            <div class="item">
+                <input type="checkbox" class="checkbox">
+                <div class="item-text">
+                    <strong>Continuous Improvement</strong>
+                    <p>Make updates based on feedback and analytics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status ready">
+        <strong>✅ Ready to Launch!</strong><br>
+        Once all items are checked, your Fresh Meat Daily website is ready for customers.
+        Share the link and start receiving orders!
+    </div>
+
+</body>
+</html>
