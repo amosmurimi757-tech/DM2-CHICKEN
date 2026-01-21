@@ -1,0 +1,360 @@
+📋 FRESH MEAT DAILY - FILE INDEX
+═══════════════════════════════════════════════════════════════
+
+🚀 START HERE
+═════════════════════════════════════════════════════════════
+
+📄 START_HERE.txt
+   → Read this FIRST! Complete overview & quick start guide
+   → What to do next
+   → All file purposes
+   → Customization steps
+
+📄 QUICK_START.md
+   → 2-minute setup guide
+   → How to run website locally
+   → Testing instructions
+   → Basic customization
+
+📄 README.md
+   → Full documentation
+   → All features explained
+   → Deployment options
+   → Troubleshooting
+
+
+🌐 WEBSITE FILES (Main Content)
+═════════════════════════════════════════════════════════════
+
+📄 index.html (Home Page)
+   → Welcome/hero section
+   → Business information
+   → Features showcase
+   → Call-to-action buttons
+   → Location details
+
+📄 products.html (Products Page)
+   → Meat types showcase
+   → Product cards
+   → Order buttons
+   → Quality guarantee section
+
+📄 order.html (Order Form) ⭐ MAIN FEATURE
+   → Customer details form
+   → Meat selection dropdown
+   → Quantity input
+   → Order value (for free delivery calculation)
+   → Delivery/Pickup options
+   → Delivery address (conditional)
+   → Preferred time selection
+   → Special requests field
+   → WhatsApp integration
+
+📄 about.html (About Us)
+   → Business story
+   → Mission statement
+   → Commitment overview
+   → Product list
+   → Differentiators
+
+📄 contact.html (Contact & FAQ)
+   → WhatsApp contact info
+   → Business location
+   → Service area details
+   → Map placeholder
+   → FAQ section (8 questions)
+
+
+🎨 STYLING & DESIGN
+═════════════════════════════════════════════════════════════
+
+📁 css/ (Folder)
+│
+└── 📄 styles.css (1000+ lines)
+    → Mobile-first responsive design
+    → All page styling
+    → Flexbox & Grid layouts
+    → Color variables
+    → Animations & transitions
+    → Print styles
+    → Breakpoints: Mobile (0-767px), Tablet (768-1023px), Desktop (1024px+)
+
+
+💻 JAVASCRIPT & FUNCTIONALITY
+═════════════════════════════════════════════════════════════
+
+📁 js/ (Folder)
+│
+└── 📄 script.js
+    → WhatsApp integration (Click-to-Chat API)
+    → Form validation
+    → Order message generation
+    → Delivery fee calculation
+    → Phone number formatting
+    → Form event listeners
+    → Error handling
+    → URL encoding for WhatsApp
+
+
+🖼️ IMAGES & MEDIA
+═════════════════════════════════════════════════════════════
+
+📁 img/ (Folder - Currently Empty)
+   → Add your product images here:
+      - chicken.jpg
+      - beef.jpg
+      - goat.jpg
+      - owner.jpg (optional)
+
+
+📋 DOCUMENTATION & GUIDES
+═════════════════════════════════════════════════════════════
+
+📄 DEPLOYMENT_CHECKLIST.html
+   → Interactive pre-launch checklist
+   → Testing verification
+   → Content checks
+   → Deployment options review
+   → Marketing tips
+   → Post-launch tasks
+
+
+═══════════════════════════════════════════════════════════════
+📊 FILE SUMMARY
+═══════════════════════════════════════════════════════════════
+
+Total Files: 12
+├── Documentation: 3 files
+│   ├── START_HERE.txt
+│   ├── QUICK_START.md
+│   ├── README.md
+│
+├── HTML Pages: 5 files
+│   ├── index.html
+│   ├── products.html
+│   ├── order.html (main)
+│   ├── about.html
+│   ├── contact.html
+│
+├── Styling: 1 file
+│   └── css/styles.css
+│
+├── JavaScript: 1 file
+│   └── js/script.js
+│
+├── Checklists: 1 file
+│   └── DEPLOYMENT_CHECKLIST.html
+│
+└── Images: 1 folder (empty)
+    └── img/
+
+═══════════════════════════════════════════════════════════════
+🎯 WHICH FILE TO EDIT FOR COMMON TASKS
+═══════════════════════════════════════════════════════════════
+
+TASK: Change Phone Number
+   → Edit: js/script.js (line 7)
+   → Search: whatsappNumber: '254701698883'
+
+TASK: Change Location
+   → Edit: index.html, about.html, contact.html
+   → Search: "Dagoreti Slaughter House"
+
+TASK: Change Free Delivery Amount
+   → Edit: js/script.js (line 10)
+   → Search: minFreeDelivery: 10000
+
+TASK: Add Product Images
+   → Save to: img/ folder
+   → Update: products.html (image paths)
+
+TASK: Update About Page
+   → Edit: about.html
+   → Sections: Business info, mission, commitment
+
+TASK: Add New Meat Type
+   → Edit: order.html (form dropdown)
+   → Add: New <option> element
+
+TASK: Change Colors
+   → Edit: css/styles.css (lines 15-30)
+   → Variables: --primary-color, --secondary-color, etc.
+
+TASK: Update Business Hours
+   → Edit: contact.html (Availability section)
+
+TASK: Change Free Delivery Threshold Display
+   → Edit: index.html (delivery-highlight section)
+   → Edit: contact.html (service area section)
+
+═══════════════════════════════════════════════════════════════
+📱 HOW PAGES CONNECT
+═══════════════════════════════════════════════════════════════
+
+                    ┌─→ index.html (HOME)
+                    │   - "Place Order" button → order.html
+                    │   - "Call Now" → tel:0701698883
+                    │
+Navigation Menu ────├─→ products.html
+                    │   - "Order Now" button → order.html
+                    │
+                    ├─→ order.html (MAIN FORM)
+                    │   - Form submit → WhatsApp API
+                    │
+                    ├─→ about.html
+                    │   - "Order Now" button → order.html
+                    │
+                    └─→ contact.html
+                        - FAQ section
+                        - "Place Order Online" → order.html
+                        - "Message on WhatsApp" → wa.me link
+
+All Pages:
+   → Floating WhatsApp button (bottom-right)
+   → Links in footer
+   → Navigation bar
+
+═══════════════════════════════════════════════════════════════
+🎨 COLOR REFERENCE
+═══════════════════════════════════════════════════════════════
+
+Primary Red: #d32f2f
+   Used for: Headers, buttons, accents, borders
+
+Primary Dark Red: #b71c1c
+   Used for: Button hover state, darker accents
+
+Secondary Blue: #1976d2
+   Used for: Links, secondary buttons
+
+Light Gray: #f8f9fa
+   Used for: Section backgrounds, form areas
+
+Dark Text: #212529
+   Used for: Main body text, headings
+
+Gray Text: #6c757d
+   Used for: Secondary text, help text
+
+WhatsApp Green: #25d366
+   Used for: Floating button only
+
+═══════════════════════════════════════════════════════════════
+⚡ QUICK FILE EDITING GUIDE
+═══════════════════════════════════════════════════════════════
+
+All files are plain text and can be edited with:
+   ✅ VS Code (Recommended)
+   ✅ Notepad
+   ✅ Any text editor
+   ✅ Microsoft Word (Save as .html or .css)
+
+DO NOT USE:
+   ❌ Microsoft Word (Save as web format)
+   ❌ Rich text editors
+   ❌ Programs that add formatting
+
+BEST PRACTICE:
+   → Use VS Code for best experience
+   → Install "HTML Preview" extension for live preview
+   → Install "Live Server" for local testing
+
+═══════════════════════════════════════════════════════════════
+🔍 FILE LOCATIONS & PATHS
+═══════════════════════════════════════════════════════════════
+
+Base Path: c:\Users\Administrator\New folder\
+
+HTML Files (Root):
+   ├── index.html
+   ├── products.html
+   ├── order.html
+   ├── about.html
+   └── contact.html
+
+CSS Files:
+   └── css/styles.css
+
+JavaScript Files:
+   └── js/script.js
+
+Image Folder:
+   └── img/
+
+Documentation (Root):
+   ├── README.md
+   ├── QUICK_START.md
+   ├── START_HERE.txt
+   └── DEPLOYMENT_CHECKLIST.html
+
+═══════════════════════════════════════════════════════════════
+🚀 DEPLOYMENT FILE PATHS
+═══════════════════════════════════════════════════════════════
+
+When deploying, upload ENTIRE folder with this structure:
+```
+fresh-meat-daily/
+├── index.html
+├── products.html
+├── order.html
+├── about.html
+├── contact.html
+├── README.md
+├── QUICK_START.md
+├── START_HERE.txt
+├── DEPLOYMENT_CHECKLIST.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+└── img/
+```
+
+NOT needed for deployment:
+   - .vscode/ folder (VS Code settings only)
+
+═══════════════════════════════════════════════════════════════
+📞 PHONE NUMBER LOCATIONS (To Update)
+═══════════════════════════════════════════════════════════════
+
+Current Number: 0701698883
+International: +254701698883
+
+Appears in:
+   ✅ index.html (4 times)
+   ✅ js/script.js (1 time - main config)
+   ✅ products.html (2 times)
+   ✅ order.html (1 time)
+   ✅ about.html (1 time)
+   ✅ contact.html (4 times)
+
+To change all at once:
+   → Edit js/script.js (line 7)
+   → Do global find/replace in editor
+   → Search: "0701698883"
+   → Replace with: "YOUR_NUMBER"
+
+═══════════════════════════════════════════════════════════════
+✅ FILE CHECKLIST FOR DEPLOYMENT
+═══════════════════════════════════════════════════════════════
+
+Before uploading to hosting:
+☐ All 5 HTML files present
+☐ css/styles.css exists
+☐ js/script.js exists
+☐ All images in img/ folder
+☐ Phone number updated
+☐ Location information correct
+☐ Free delivery amount verified
+☐ All links working locally
+☐ Form validation working
+☐ WhatsApp opening correctly
+
+═══════════════════════════════════════════════════════════════
+
+🎉 Your Fresh Meat Daily website is complete!
+   All files are organized and ready to use.
+   
+→ Next: Read START_HERE.txt or QUICK_START.md
+
+═══════════════════════════════════════════════════════════════
